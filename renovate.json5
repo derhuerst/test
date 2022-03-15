@@ -1,0 +1,18 @@
+{
+	"docker": {
+		"pinDigests": true
+	},
+	"packageRules": [
+		{
+			"matchDatasources": ["docker"],
+			"matchPackageNames": ["mfdz/opentripplanner"],
+			// todo: regex versioning parses numeric only
+			// https://github.com/renovatebot/renovate/blob/5ba8ce6fea517763ed0c1e5a66ef5ed92a7ad00f/lib/modules/versioning/regex/index.ts#L69-L79
+			"versioning": "loose",
+			// yyyy-MM-dd-HH_mm
+			// "versioning": "regex:^(?<major>\\d{4}-\\d{2}-\\d{2}-\\d{2}_\\d{2})$",
+		}
+	],
+	// "ignoreUnstable": true,
+	// "stabilityDays": 2,
+}
