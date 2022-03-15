@@ -1,0 +1,12 @@
+{
+	"docker": {
+		"pinDigests": true
+	},
+	// "packageRules": [
+	// 	{
+	// 		"matchDatasources": ["docker"],
+	// 		"matchPackageNames": ["mfdz/opentripplanner"],
+	// 		"versioning": "semver"
+	// 	}
+	// ],
+}
