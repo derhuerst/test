@@ -1,0 +1,17 @@
+{
+	"docker": {
+		"pinDigests": true
+	},
+	"packageRules": [
+		{
+			"matchDatasources": ["docker"],
+			"matchPackageNames": ["mfdz/opentripplanner"],
+			// todo
+			// "versioning": "loose",
+			// yyyy-MM-dd-HH_mm
+			"versioning": "regex:^(?<major>\\d{4}-\\d{2}-\\d{2}-\\d{2}_\\d{2})$",
+		}
+	],
+	// "ignoreUnstable": true,
+	// "stabilityDays": 2,
+}
