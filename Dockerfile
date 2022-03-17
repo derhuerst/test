@@ -4,6 +4,6 @@
 # ARG OTP_IMAGE=mfdz/opentripplanner
 
 # FROM $OTP_IMAGE:$OTP_TAG AS otp
-FROM mfdz/opentripplanner:2022-03-16-11_29@sha256:6836c3b40faf6e99a77295c28312ce8aedeee17c805eeb832634c33ff0f6f963 AS otp
+FROM mfdz/opentripplanner:2022-03-17-09_47@sha256:00b756092c44ce1904677a4465e4e3679cea3cbf26616078e6e0080087f1d800 AS otp
 
 ENTRYPOINT java -jar otp-shaded.jar --version
